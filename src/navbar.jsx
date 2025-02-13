@@ -28,15 +28,16 @@ function Navbar() {
                 <div id='hidnav' className={`-z-10 ${open ? "w-70 delay-0 animate-slide-in" : "animate-slide-out w-0 delay-200"} h-[100vh] fixed top-0 left-0 bg-white drop-shadow-xl`} onAnimationEnd={()=>{setAnimating(false)}}>
                     <div className="w-full text-3xl">
                         <ul className={`m-auto mt-40 ${open ? "text-[100%]" : "text-[0%] delay-200" } flex flex-col w-fit h-[40vh] drop-shadow-xl`}>
-                            <li className="ml-3 my-4">
+                            <li className="m-auto my-6">
                                 <a href="/home" className="!text-dark ">Home</a>
                             </li >
-
-                            <li className="ml-3 my-4">
+                                <hr className='h-1'/>
+                            <li className="m-auto my-6">
                                 <a href="/about" className="!text-dark ">About</a>
                             </li>
-
-                            <li className="ml-3 my-4">
+                                
+                                <hr className='h-2'/>
+                            <li className="m-auto my-6">
                                 <a href="/contact-us" className="m-auto !text-dark ">Contact Us</a>
                             </li>
                         </ul>
