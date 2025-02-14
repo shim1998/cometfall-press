@@ -44,9 +44,9 @@ function Navbar() {
                     </div>
                 </div>
                 <div className="bg-dark drop-shadow-xl z-20 w-full flex flex-row items-center mx-auto p-1">
-                    <Bars3Icon className={`${open ? "" : ""} h-15 p-2 m-2 drop-shadow-xl text-white z-20`} onClick={invertOpen}/>
+                    <Bars3Icon className={`${open ? "" : ""} h-12 p-2 m-2 drop-shadow-xl text-white z-20`} onClick={invertOpen}/>
                     <a href="https://cometfallpress.com/" className="flex items-center">
-                        <img src={logo} className="h-15 m-4 object-scale-down" alt="Cometfall Logo" />
+                        <img src={logo} className="h-12 m-1 object-scale-down" alt="Cometfall Logo" />
                     </a>
                 </div>
             </nav>

@@ -69,6 +69,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: url(assets/bg.jpg);
+  background-repeat: repeat;
+  background-attachment: local;
 }
 
 a {
@@ -87,6 +91,15 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url(assets/bg.jpg);
+  background-repeat: repeat;
+  background-attachment: local;
+}
+
+.project {
+  background-image: url(assets/bg.jpg);
+  background-repeat: repeat;
+  background-attachment: local;
 }
 
 h1 {
