@@ -13,7 +13,7 @@ const socialLinks = {
 
 function Footer() {
     return (
-        <footer className="bg-dark text-light text-center p-4 mt-10">
+        <footer className="bg-dark text-light text-center p-4 mt-0">
             <div className="container mx-auto">
                 <p className="text-sm md:text-base">
                     © {new Date().getFullYear()} Cometfall Press. All Rights Reserved.
@@ -39,7 +39,7 @@ function Footer() {
                     <a href={socialLinks.discord} target="_blank" rel="noopener noreferrer" className="social-icon">
                         <i className="fab fa-discord text-xl"></i>
                     </a>
-                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=aaron.kumar@cometfallpress.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                    <a href="mailto:aaron.kumar@cometfallpress.com" target="_blank" rel="noopener noreferrer" className="social-icon">
                         <i className="fas fa-envelope text-2xl"></i>
                     </a>
                 </div>

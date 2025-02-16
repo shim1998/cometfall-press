@@ -5,6 +5,7 @@ import map from './assets/KasaaqMap1_alt.png'
 import houses from './assets/Houses_Kavorra1_alt.png'
 import worldtitle from './assets/theworld_title.png'
 import { useState, useEffect } from 'react'
+import Footer from './footer.jsx'
 
 function Project() {
 
@@ -73,7 +74,8 @@ function Project() {
                         </div>
                     </div>
                 <div className='h-[200px]'></div>
-            </div>  
+            </div>
+            <Footer/> 
         </>
     )
 }
