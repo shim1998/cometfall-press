@@ -1,4 +1,4 @@
-import logo from '/CFPLogo_Horizontal White Transparent.png'
+import logo from './assets/WebsiteLogo.webp'
 import './home.css'
 
 function Home() {

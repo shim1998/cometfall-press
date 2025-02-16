@@ -70,7 +70,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-image: url(assets/bg.jpg);
+  background-image: url(assets/WebsiteBG.webp);
   background-repeat: repeat;
   background-attachment: local;
 }
@@ -91,13 +91,13 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url(assets/bg.jpg);
+  background-image: url(assets/WebsiteBG.webp);
   background-repeat: repeat;
   background-attachment: local;
 }
 
 .project {
-  background-image: url(assets/bg.jpg);
+  background-image: url(assets/WebsiteBG.webp);
   background-repeat: repeat;
   background-attachment: local;
 }
