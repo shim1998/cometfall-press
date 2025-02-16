@@ -25,20 +25,19 @@ function Navbar() {
     return (
         <>
             <nav className="">
-                <div id='hidnav' className={`-z-10 ${open ? "w-50 delay-0 animate-slide-in" : "animate-slide-out w-0 delay-200"} h-[100vh] fixed top-0 left-0 bg-white drop-shadow-xl`} onAnimationEnd={()=>{setAnimating(false)}}>
-                    <div className="w-full text-md md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl">
-                        <ul className={`m-auto mt-30 ${open ? "text-[100%]" : "text-[0%] delay-200" } flex flex-col w-fit h-[40vh] drop-shadow-xl`}>
-                            <li className="m-auto my-6">
-                                <a href="/home" className="!text-dark ">Home</a>
+                <div id='hidnav' className={`${open ? "w-50 delay-0 animate-slide-in" : "animate-slide-out w-0 delay-200"} h-[100vh] fixed top-0 left-0 bg-white drop-shadow-xl`} onAnimationEnd={()=>{setAnimating(false)}}>
+                    <div className="w-full text-md md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl z-20">
+                        <ul className={`m-auto mt-30 ${open ? "text-[100%]" : "text-[0%] delay-200" } flex flex-col w-fit h-[40vh] drop-shadow-xl z-20`}>
+                            <li className="m-auto my-6 z-20">
+                                <a href="/home" className="m-auto !text-dark z-20" onClick={() => {console.log('working')}}>Home</a>
                             </li >
-                                <hr className='h-1'/>
+                                <hr className='h-1 z-20'/>
                             <li className="m-auto my-6">
-                                <a href="/about" className="!text-dark ">About</a>
+                                <a href="/about" className="m-auto !text-dark z-20">About</a>
                             </li>
-                                
                                 <hr className='h-2'/>
-                            <li className="m-auto my-6">
-                                <a href="/contact-us" className="m-auto !text-dark ">Contact Us</a>
+                            <li className="m-auto my-6 z-20">
+                                <a href="/contact-us" className="m-auto !text-dark z-20">Contact Us</a>
                             </li>
                         </ul>
                     </div>
