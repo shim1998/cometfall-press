@@ -38,7 +38,7 @@ function Footer() {
                     <a href={socialLinks.discord} target="_blank" rel="noopener noreferrer" className="text-light hover:text-magenta">
                         <i className="fab fa-discord text-xl"></i>
                     </a>
-                    <a href="mailto:aaron.kumar@cometfallpress.com" className="text-light hover:text-magenta">
+                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=aaron.kumar@cometfallpress.com" className="text-light hover:text-magenta">
                         <i className="fas fa-envelope text-2xl"></i>
                     </a>
                 </div>
