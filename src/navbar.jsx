@@ -1,5 +1,5 @@
 import './index.css'
-import logo from './assets/CFPLogo_Horizontal Black Transparent.png'
+import logo from './assets/WebsiteLogo.webp'
 import { Bars3Icon } from '@heroicons/react/24/solid'
 import { useState } from 'react'
 

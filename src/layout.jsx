@@ -20,7 +20,6 @@ function Layout() {
                     <Outlet className='overflow-x-clip'/>
                 </div>
           </div>
-          <Footer/>
       </>
   )
 }
