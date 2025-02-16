@@ -1,5 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import Navbar from './navbar.jsx'
+import Footer from './footer.jsx'
 
 function Layout() {
 
@@ -19,6 +20,7 @@ function Layout() {
                     <Outlet className='overflow-x-clip'/>
                 </div>
           </div>
+          <Footer/>
       </>
   )
 }
