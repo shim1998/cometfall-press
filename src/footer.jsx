@@ -31,7 +31,7 @@ function Footer() {
                         <i className="fab fa-facebook text-xl"></i>
                     </a>
                     <a href={socialLinks.bluesky} target="_blank" rel="noopener noreferrer" className="social-icon">
-                        <i className="fas fa-cloud text-xl"></i> {/* Placeholder for Bluesky */}
+                        <i className="fab fa-bluesky text-xl"></i> 
                     </a>
                     <a href={socialLinks.linkedIn} target="_blank" rel="noopener noreferrer" className="social-icon">
                         <i className="fab fa-linkedin text-xl"></i>
