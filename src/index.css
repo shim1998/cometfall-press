@@ -106,3 +106,12 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
+.social-icon {
+    color: #a64993;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: white;
+}
