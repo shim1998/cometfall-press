@@ -13,7 +13,7 @@ const socialLinks = {
 
 function Footer() {
     return (
-        <footer className="bg-dark text-light text-center p-4 mt-0">
+        <footer id='contact' className="bg-dark text-light text-center p-4 mt-0 scroll-smooth">
             <div className="container mx-auto">
                 <p className="text-sm md:text-base">
                     © {new Date().getFullYear()} Cometfall Press. All Rights Reserved.

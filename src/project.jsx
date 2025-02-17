@@ -10,7 +10,6 @@ import subclasses from './assets/WebsiteSubclasses.webp'
 import subclasstitle from './assets/WebsiteText3.webp'
 import book from './assets/WebsiteBook.webp'
 import { useState, useEffect } from 'react'
-import Footer from './footer.jsx'
 
 function Project() {
 
@@ -37,13 +36,13 @@ function Project() {
 
     return (
         <>
-            <div className='project -z-20 overflow-x-clip place-items-center place-content-center sm:text-md md:text-lg lg:text-lg xl:text-xl font-regular'>
-                <div className='w-full h-auto place-content-center block mb-30 md:mb-0'>
+            <div className='scroll-smooth project -z-20 overflow-x-clip place-items-center place-content-center sm:text-md md:text-lg lg:text-lg xl:text-xl font-regular'>
+                <div className='w-full h-auto place-content-center block mb-20 md:mb-0'>
                     <img className='w-[100vw] scale-160 md:scale-140 lg:scale-140 xl:scale-130 2xl:scale-130 h-auto top-0' src={initbg} alt='Sunless Dunes'/>
                 </div>
                 <div className='w-[100%] lg:w-[95%] m-auto'>
                     <div className='flex flex-col lg:flex-row-reverse place-items-center place-content-center m-auto'>
-                        <p className=' relative clear-both text-left text-pretty text-dark w-3/4 lg:w-1/2 m-auto lg:mr-15 md:mt-30 pt-0 xl:pt-10'>
+                        <p className=' relative clear-both text-left text-pretty text-dark w-3/4 lg:w-1/2 m-auto mt-0 md:mt-30 xl:mt-30 pt-0 xl:pt-10'>
                             Sunless Dunes is a new Campaign Setting for D&D 5e inspired by medieval India, taking your table to the nation of <i>Kasaaq</i> within the northern deserts of the continent of <i>Eqos</i>. The various cities, noble houses, races, and subclasses found within this setting are each influenced by one of the many diverse cultures found in India, set during a time period in which steam power is beginning to shake-up old feudal ways. 
                             <br/>
                             <br/>
@@ -54,13 +53,16 @@ function Project() {
                         </div>
                     </div>
                     
-                    <div className='relative flex flex-col mt-10'>
+                    <div className='relative flex flex-col mt-10 md:mt-10 lg:mt-20 xl:mt-10'>
                         <div className='relative drop-shadow-[0_0_10px_rgba(50,0,0,0.33)] w-3/5 md:w-2/5 lg:w-1/3 xl:w-1/4 m-auto z-20 p-2'>
                             <img src={worldtitle} alt='World Title' />
                         </div>
                         <div className='place-items-center relative h-auto flex flex-col-reverse m-auto lg:flex-row w-[90%] '>
                             <p className='relative w-3/4 lg:w-1/2  mx-auto h-auto p-2 clear-both mt-10 text-left text-pretty text-dark'>
-                                This book details the cultures and landscapes of the nation of Kasaaq, which is only a small whole of a greater world known as <i>Abmarah</i>. Kasaaq is most well known for its large desert, but contains many diverse environments including dense jungles, floodplains, underground caves, volcanic mountains, tropical islands, and cool valleys.
+                                This book details the cultures and landscapes of the nation of the Kasaaqi Dynasty (कसाकी हुकूमत), which is only a small whole of a greater world known as Abmarah. Kasaaq is most well known for its large desert, but contains many diverse environments including dense jungles, floodplains, underground caves, volcanic mountains, tropical islands, and cool valleys.
+                                <br/>
+                                <br/>
+                                The Kav'orra Desert (कवोरा मरुस्थल) is a vast expanse of arid wasteland that covers almost the entirety of northern Eqos. It is a land of shifting sands and unrelenting heat, where the sun beats down mercilessly on all who dare to cross it. This desert is primordial, dating back to a time long before even the most powerful empires of the world existed. The sands of the Kav'orra Desert are said to be incomprehensibly old, unchanged and uncharted.
                             </p>
                             <div className='w-4/5 scale-110 md:w-2/3 lg:w-3/5 xl:w-2/5 z-20 p-2 m-2 mt-5'>
                                 <img className='min-w-[100%]' src={world} alt='World Map' />
@@ -70,7 +72,7 @@ function Project() {
                 </div>
                 <div className='place-items-center relative h-auto flex flex-col m-auto mt-5 w-[100vw]'>
                     <div className='relative w-[100vw] z-20 drop-shadow-[0_0_50px_rgba(50,5,5,0.33)]'>
-                        <img src={map} alt='Kasaaq Map'/>
+                        <img className='min-w-[100vw]' src={map} alt='Kasaaq Map'/>
                     </div>
                     <div className='flex flex-col mx-auto place-items-center'>
                         <div className='flex flex-row'>
@@ -86,23 +88,25 @@ function Project() {
                     </div>
                 </div>
                 <div className='place-items-center relative h-auto flex flex-col m-auto mt-5 w-[100vw]'>
-                    <p className='relative mx-5 pt-0 my-auto clear-both text-left text-pretty font-regular w-3/4 m-auto text-dark'>
-                        There are many factions both outside and within Kasaaq, and many of them feature as backgrounds for player characters and NPCs alike within this book. An example here is the Swarna Guild, based on the ancient Dravidian merchants of south India. While they are not within Kasaaq itself, they control a neighboring nation and hold a lot of foreign influence within the desert.                  
+                    <p className='relative pt-0 clear-both text-left text-pretty font-regular w-4/5 m-auto text-dark'>
+                        There are many factions both outside and within Kasaaq, and many of them feature as backgrounds for player characters and NPCs alike within this book. An example here is the Swarna Guild, based on the ancient Dravidian merchants of South India. While they are not within Kasaaq itself, they control a neighboring nation and hold a lot of foreign influence within the desert.                  
                     </p>
-                    <div className='relative flex flex-col mt-20'>
+                    <div className='relative flex flex-col mt-20 m-auto'>
                         <div className='relative drop-shadow-[0_0_10px_rgba(50,0,0,0.33)] w-3/5 md:w-2/5 lg:w-1/3 xl:w-1/4 m-auto z-20 p-2'>
                             <img src={racesitle} alt='Race Title' />
                         </div>
-                        <div className='place-items-center relative h-auto flex flex-col m-auto lg:flex-row w-[100%] lg:w-[100%]'>
-                            <div className='w-4/5 scale-110 md:w-2/3 lg:w-3/5 xl:w-2/5 z-20 p-2 mx-5 mt-5 '>
+                        <div className='place-items-center relative h-auto flex flex-col m-auto lg:flex-row w-[100%] lg:w-[90%]'>
+                            <div className='w-4/5 scale-110 md:w-2/3 lg:w-3/5 xl:w-2/5 z-20 p-2 mx-auto mt-5 '>
                                 <img className='min-w-[100%]' src={races} alt='Races' />
                             </div>
-                            <p className='relative w-3/4 lg:w-1/2 mx-5 h-auto p-2 clear-both mt-10 text-left text-pretty text-dark'>
-                                This book details the cultures and landscapes of the nation of Kasaaq, which is only a small whole of a greater world known as <i>Abmarah</i>. Kasaaq is most well known for its large desert, but contains many diverse environments including dense jungles, floodplains, underground caves, volcanic mountains, tropical islands, and cool valleys.
+                            <p className='relative w-3/4 lg:w-1/2 mx-auto h-auto p-5 clear-both mt-10 text-left text-pretty text-dark'>
+                                There are many races specifically created for the world of Abmarah, including ancient races long-thought extinct. As Eqos is a melting pot of culture and races, most races from existing rulebooks can easily be played and flavored as both travelers and residents. Most people do not have an overwhelming racial culture, instead their culture is based on the city or faction that they grew up in. 
+                                <br/>
+                                <br/>
+                                The Indian subcontinent alone is home to hundreds of cultural groups and 800+ languages. This setting cannot possibly represent the full diversity present in the region, so only the most common and relevant cultures and languages have been taken as inspiration for their Eqosi equivalents in the setting. These in-universe cultures are not truly authentic to reality, and are not commentaries on the actual cultures used as inspiration.
                             </p>
-                            
                         </div>
-                        <p className='relative m-auto my-auto mt-5 lg:mt-10 clear-both text-left text-pretty font-regular w-3/4 text-dark'>
+                        <p className='relative m-auto my-auto mt-10 lg:mt-10 clear-both text-left text-pretty font-regular w-3/4 text-dark'>
                             This book will contain 13 new playable races, each culturally embedded within the history of Kasaaq and inspired from Indian mythology or existing fantasy mythos. Many of these races have unique racial feats to go along with them. These races include:
                         </p>
                         <ul className='w-3/4 mx-auto my-0 mt-10 columns-1 md:columns-2'>
@@ -124,14 +128,13 @@ function Project() {
                         <div className='relative drop-shadow-[0_0_10px_rgba(50,0,0,0.33)] w-3/5 md:w-2/5 lg:w-1/3 xl:w-1/4 m-auto mt-15 z-20 p-2'>
                             <img src={subclasstitle} alt='Subclass Title' />
                         </div>
-                        <div className='place-items-center relative h-auto flex flex-col m-auto lg:flex-row w-[100%] lg:w-[100%]'>
-                            <div className='w-4/5 scale-110 md:w-2/3 lg:w-3/5 xl:w-2/5 z-20 p-2 mx-5 mt-5 '>
+                        <div className='place-items-center relative h-auto flex flex-col m-auto lg:flex-row-reverse w-[100%] lg:w-[90%]'>
+                            <div className='w-4/5 mx-auto scale-110 md:w-2/3 lg:w-3/5 xl:w-2/5 z-20 p-2 mt-5 '>
                                 <img className='min-w-[100%]' src={subclasses} alt='Subclass' />
                             </div>
                             <p className='relative w-3/4 lg:w-1/2 mx-5 h-auto p-2 clear-both mt-10 text-left text-pretty text-dark'>
-                                This book details the cultures and landscapes of the nation of Kasaaq, which is only a small whole of a greater world known as <i>Abmarah</i>. Kasaaq is most well known for its large desert, but contains many diverse environments including dense jungles, floodplains, underground caves, volcanic mountains, tropical islands, and cool valleys.
+                                We have designed new subclasses for this setting inspired by real-life concepts within the history and mythologies of South Asia. From a cleric subclass devoted to astrology to a fighter subclass designed to use new gunpowder firearms, a wide variety of subclasses are presented to the players. These subclasses are designed to work with both the old and new rulesets, providing new playstyles not yet realized such as a strength-based rogue and a wizard channeling divine magic.
                             </p>
-                            
                         </div>
                         <p className='relative m-auto my-auto mt-5 lg:mt-10 clear-both text-left text-pretty font-regular w-3/4 text-dark'>
                             This book will contain 13 new subclasses, one for each of the main classes found in 5e (including Artificer!) These are:
@@ -152,13 +155,10 @@ function Project() {
                             <li className='m-4 break-inside-avoid-column'><b>Wizard:</b> <i>The Heretic</i><br/> A subclass that involves turning the divine into the arcane.</li>
                         </ul>
                     </div>
-                    <h2 href='' className='font-semibold text-5xl m-auto mt-20'>Coming Soon on Kickstarter!</h2>
-                    <p className='m-auto mt-10'>Follow us on our socials for updates.</p>
+                    <h2 className='font-semibold text-5xl m-auto mt-20 text-center'>Coming Soon on Kickstarter!</h2>
+                    <p className='m-auto mt-10 mb-10'>Follow us on our socials for updates.</p>
                 </div>
-                <div className='h-[200px]'/>
-            
             </div>
-            <Footer/> 
         </>
     )
 }

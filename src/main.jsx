@@ -11,6 +11,8 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route element={<Layout />}>
           <Route path="project" element={<Project/>} />
+          <Route path="about" element={<Navigate to="https://cometfallpress.com/"/>}/>
+          <Route path="home" element={<Navigate to="https://cometfallpress.com/"/>}/>
           <Route
               path="*"
               element={<Navigate to="project"/>}

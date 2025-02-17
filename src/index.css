@@ -11,6 +11,9 @@
   --animate-slide-in: slide-in 0.2s ease-in-out;
   --animate-slide-out: slide-out 0.2s ease-in-out;
 
+  --animate-slide-in-top: slide-in-top 0.3s ease-in-out;
+  --animate-slide-out-top: slide-out-top 0.3s ease-in-out;
+
   --animate-rotate-in: rotate-in 0.2s ease-in-out;
   --animate-rotate-out: rotate-out 0.2s ease-in-out;
 
@@ -26,6 +29,24 @@
   @keyframes slide-in {    
     0% {
       transform: translate(-20rem, 0)
+    }
+    100% {
+      transform: translate(0);
+    }    
+  }
+
+  @keyframes slide-out-top {    
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(0, -20rem);
+    }    
+  }
+
+  @keyframes slide-in-top {    
+    0% {
+      transform: translate(0, -20rem)
     }
     100% {
       transform: translate(0);
@@ -51,6 +72,7 @@
   }
 }
 
+html { scroll-behavior: smooth; }
 
 .paused{
   animation-play-state: paused;
@@ -73,6 +95,8 @@
   background-image: url(assets/WebsiteBG.webp);
   background-repeat: repeat;
   background-attachment: local;
+
+  scroll-behavior: smooth;
 }
 
 a {

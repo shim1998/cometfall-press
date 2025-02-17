@@ -1,9 +1,9 @@
 import './index.css'
 import logo from './assets/WebsiteLogo.webp'
 import { Bars3Icon } from '@heroicons/react/24/solid'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
-function Navbar() {
+function Navbar(up) {
     let nav;
     window.onload = () => {  
         nav = document.getElementById('hidnav')  
@@ -21,23 +21,33 @@ function Navbar() {
         }
         //${open ? "" : ""}
     }
+    const [scrollUp, setUp] = useState(up.up)
 
+    useEffect(() => {
+        setUp(up.up)
+        if(!up.up && !animating)
+        {
+            setAnimating(true)
+            if(open){setOpen(false)}
+            setAnimating(false)
+        }
+    })
     return (
         <>
-            <nav className="">
-                <div id='hidnav' className={`${open ? "w-50 delay-0 animate-slide-in" : "animate-slide-out w-0 delay-200"} h-[100vh] fixed top-0 left-0 bg-white drop-shadow-xl`} onAnimationEnd={()=>{setAnimating(false)}}>
+            <nav className={`${scrollUp&&'animate-slide-in-top top-0'} ${!scrollUp&&'animate-slide-out-top delay-300 -top-20'} sticky md:text-lg lg:text-lg xl:text-xl font-regular`}>
+                <div id='hidnav' className={`${open ? "w-50 delay-0 animate-slide-in" : "animate-slide-out w-0 delay-200"} h-[120vh] fixed top-0 left-0 bg-white drop-shadow-xl`} onAnimationEnd={()=>{setAnimating(false)}}>
                     <div className="w-full text-md md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl z-20">
                         <ul className={`m-auto mt-30 ${open ? "text-[100%]" : "text-[0%] delay-200" } flex flex-col w-fit h-[40vh] drop-shadow-xl z-20`}>
                             <li className="m-auto my-6 z-20">
-                                <a href="/home" className="m-auto !text-dark z-20" onClick={() => {console.log('working')}}>Home</a>
+                                <a href="https://cometfallpress.com/" className="m-auto !text-dark z-20" onClick={() => {console.log('working')}}>Home</a>
                             </li >
                                 <hr className='h-1 z-20'/>
                             <li className="m-auto my-6">
-                                <a href="/about" className="m-auto !text-dark z-20">About</a>
+                                <a href="https://cometfallpress.com/" className="m-auto !text-dark z-20">About</a>
                             </li>
                                 <hr className='h-2'/>
                             <li className="m-auto my-6 z-20">
-                                <a href="/contact-us" className="m-auto !text-dark z-20">Contact Us</a>
+                                <a href="#contact" className="m-auto !text-dark z-20">Contact Us</a>
                             </li>
                         </ul>
                     </div>
