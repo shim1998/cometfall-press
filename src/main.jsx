@@ -7,15 +7,15 @@ import NoPage from './nopage.jsx'
 import Project from './project.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <HashRouter>
+  <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
           <Route path="project" element={<Project/>} />
           <Route
               path="*"
-              element={<Navigate to="project" />}
+              element={<Navigate to="project"/>}
           />
         </Route>
       </Routes>
-  </HashRouter>
+  </BrowserRouter>
 )
